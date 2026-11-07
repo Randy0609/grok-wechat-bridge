@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grok-wechat-bridge"
+version = "0.1.0.dev1"
+description = "Clean-room bridge between one bound private WeChat conversation and the primary GrokBot (foundation increment, synthetic adapters only)."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+grok-wechat-bridge = "grok_wechat_bridge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
